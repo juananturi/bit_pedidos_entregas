@@ -7,16 +7,15 @@
                 @csrf 
                 <div class="row">  
                         <x-input label="Nombre" name="nombre" id="nombre" type="text"> </x-input>
+                        <x-input label="Apellido" name="apellido" id="apellido" type="text"> </x-input>
                         <x-input label="Cedula" name="cedula" id="cedula" type="text"></x-input>
                         <x-input label="Direccion" name="direccion" id="direccion" type="text"></x-input>
-                        <x-input label="Departamento" name="departamento" id="departamento" type="text"></x-input>
                         <x-select></x-select>
                         <x-input label="Barrio" name="barrio" id="barrio" type="text"></x-input>
-                        
                     <div class="form-group col-6 my-2"> 
                         <label for="tipo_empleado">Tipo de empleado</label>   
 
-                        <select  class="form-control " name="tipo_empleado"> 
+                        <select  class="form-control " name="tipo_empleado" id="te" > 
                             <option value="1">Administrativo</option> 
                             <option value="2">Asesor</option> 
                             <option value="3">Entregador</option> 
@@ -24,15 +23,15 @@
                         </select> 
                     </div> 
                         <x-input label="Salario" name="salario" id="salario" type="text"></x-input>
-                        <x-input label="Usuario" name="usuario" id="usuario" type="text"></x-input>
-                        <x-input label="Contraseña" name="contraseña" id="contraseña" type="text"></x-input>
+                        <x-input label="Usuario" name="email" id="email" type="email"></x-input>
+                        <x-input label="Contraseña" name="password" id="password" type="text"></x-input>
                 </div> 
                 <br>
                 
-
+                    <x-button type="submit" >Crear</x-button>
             </form> 
         </div> 
     </section> 
      
-    <script src="{{ asset('js/departamentos.js') }}"></script> 
+   
 </x-layouts.main-layout>

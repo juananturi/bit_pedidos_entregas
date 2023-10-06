@@ -1,18 +1,38 @@
-    /* Estilo personalizado para el footer */
-    footer {
-        background-color: #007BFF;
-        color: white;
-        padding: 20px 0;
-    }
+     /* Estilos para el cuerpo de la página */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* Establece el alto mínimo de la ventana gráfica */
+    display: flex;
+    flex-direction: column;
+}
+    
+/* Estilo personalizado para el footer */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px 0;
+    bottom: 0;
+    position: sticky;
+    padding: 10px 0;
+    text-align: center;
+}
 
-    /* Estilo para los enlaces en el footer */
-    footer a {
-        color: white;
-        text-decoration: none;
-    }
+/* Estilo para los enlaces en el footer */
+footer a {
+    color: white;
+    text-decoration: none;
+}
 
-    /* Estilo para los iconos de redes sociales */
-    footer .social-icons i {
-        font-size: 24px;
-        margin-right: 10px;
-    }
+/* Estilo para los iconos de redes sociales */
+footer .social-icons i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+main {
+    flex: 1; /* Esto hace que el contenido ocupe todo el espacio restante */
+    padding: 20px; /* Espacio de relleno opcional */
+}
+
+

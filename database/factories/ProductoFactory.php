@@ -4,9 +4,6 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-/**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Producto>
- */
 class ProductoFactory extends Factory
 {
     /**
@@ -17,7 +14,11 @@ class ProductoFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'nombre' => $this->faker->word(),
+            'descripcion' => $this->faker->sentence(),
+            'precio' => $this->faker->randomFloat(2, 10, 200),
+            'marca_id' => $this->faker->numberBetween(1, 10),
+            'categoria_id' => $this->faker->numberBetween(1, 5),
         ];
     }
 }

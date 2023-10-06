@@ -38,3 +38,7 @@ Las contribuciones son bienvenidas. Por favor, abre un problema o realiza un pul
 ## Licencia
 
 Este proyecto está bajo la licencia MIT.
+
+## Documentación del proyecto en Notion 
+para mas informacion visita este link :
+https://imminent-baseball-a71.notion.site/Pedidos-y-Entregas-bb840ca65227428e8ec3fe3a814b4789

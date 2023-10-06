@@ -19,8 +19,7 @@ return new class extends Migration
             $table->string('direccion')->nullable();
             $table->string('barrio')->nullable();
             $table->string('salario')->nullable();
-            $table->string('usuario')->nullable();
-            $table->string('contraseña')->nullable();
+            $table->string('cargo')->nullable();
             $table->timestamps();
             $table->unsignedBigInteger('departamento_id'); 
             $table->unsignedBigInteger('municipio_id'); 
